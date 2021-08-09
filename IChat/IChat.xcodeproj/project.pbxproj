@@ -9,19 +9,25 @@
 /* Begin PBXBuildFile section */
 		0914240F26C071B50079B99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914240E26C071B50079B99E /* AppDelegate.swift */; };
 		0914241126C071B50079B99E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914241026C071B50079B99E /* SceneDelegate.swift */; };
-		0914241326C071B50079B99E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914241226C071B50079B99E /* ViewController.swift */; };
+		0914241326C071B50079B99E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914241226C071B50079B99E /* AuthViewController.swift */; };
 		0914241826C071B70079B99E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0914241726C071B70079B99E /* Assets.xcassets */; };
 		0914241B26C071B70079B99E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0914241926C071B70079B99E /* LaunchScreen.storyboard */; };
+		0914242326C154F60079B99E /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914242226C154F60079B99E /* UIButton + Extension.swift */; };
+		0914242526C156D50079B99E /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914242426C156D50079B99E /* UIFont + Extension.swift */; };
+		0914242726C1577F0079B99E /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914242626C1577F0079B99E /* UIColor + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0914240B26C071B50079B99E /* IChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0914240E26C071B50079B99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0914241026C071B50079B99E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0914241226C071B50079B99E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0914241226C071B50079B99E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		0914241726C071B70079B99E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0914241A26C071B70079B99E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0914241C26C071B70079B99E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0914242226C154F60079B99E /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		0914242426C156D50079B99E /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		0914242626C1577F0079B99E /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			children = (
 				0914240E26C071B50079B99E /* AppDelegate.swift */,
 				0914241026C071B50079B99E /* SceneDelegate.swift */,
-				0914241226C071B50079B99E /* ViewController.swift */,
+				0914241226C071B50079B99E /* AuthViewController.swift */,
+				0914242226C154F60079B99E /* UIButton + Extension.swift */,
+				0914242426C156D50079B99E /* UIFont + Extension.swift */,
+				0914242626C1577F0079B99E /* UIColor + Extension.swift */,
 				0914241726C071B70079B99E /* Assets.xcassets */,
 				0914241926C071B70079B99E /* LaunchScreen.storyboard */,
 				0914241C26C071B70079B99E /* Info.plist */,
@@ -133,9 +142,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0914241326C071B50079B99E /* ViewController.swift in Sources */,
+				0914242526C156D50079B99E /* UIFont + Extension.swift in Sources */,
+				0914241326C071B50079B99E /* AuthViewController.swift in Sources */,
 				0914240F26C071B50079B99E /* AppDelegate.swift in Sources */,
+				0914242726C1577F0079B99E /* UIColor + Extension.swift in Sources */,
 				0914241126C071B50079B99E /* SceneDelegate.swift in Sources */,
+				0914242326C154F60079B99E /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
