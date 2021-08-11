@@ -9,12 +9,11 @@ import UIKit
 
 class AuthViewController: UIViewController {
 
-    var button: UIButton = {
-        let button = UIButton()
-        return button
-    }()
+    let logoImageView = UIImageView(image: #imageLiteral(resourceName: "Logo"), contentMode: .scaleAspectFit)
     
-    
+    let googleLabel = UILabel(text: "Get started with")
+    let emailLabel = UILabel(text: "Or sign up with")
+    let alreadyOnboardLabel = UILabel(text: "Already onboard?")
     
     let googleButton = UIButton(title: "Google", titleColor: .black, backgroundColor: .white, isShadow: true)
     let emailButton = UIButton(title: "Email", titleColor: .white, backgroundColor: .buttonDark())
@@ -22,11 +21,41 @@ class AuthViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
          
-        view.backgroundColor = .blue
+        view.backgroundColor = .white
+        setupConstraints()
     }
 }
+
+
+// MARK: - SetupConstraints
+
+extension AuthViewController {
+    private func setupConstraints() {
+        logoImageView.translatesAutoresizingMaskIntoConstraints = false
+      
+        let googleView = ButtonFormView(label: googleLabel, button: googleButton)
+        let emailView = ButtonFormView(label: emailLabel, button: emailButton)
+        let loginView = ButtonFormView(label: alreadyOnboardLabel, button: loginButton)
+        
+        let stackView = UIStackView(arrangedSubviews: [googleView, emailView, loginView], axis: .vertical, spacing: 40)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+      
+        view.addSubview(logoImageView)
+        view.addSubview(stackView)
+        
+        NSLayoutConstraint.activate([
+            logoImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 160),
+            logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160),
+            stackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 40),
+            stackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -40),
+        ])
+    }
+}
+
+// MARK: SwiftUI
 
 import SwiftUI
 
@@ -44,6 +73,7 @@ struct AuthProvider: PreviewProvider {
         }
         
         func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+            
         }
     }
 }
