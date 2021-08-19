@@ -18,6 +18,7 @@
 		0914242926C2890C0079B99E /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914242826C2890C0079B99E /* UILabel + Extension.swift */; };
 		0914242B26C289A30079B99E /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914242A26C289A30079B99E /* UIImageView + Extension.swift */; };
 		0916124126CD6CF70020601C /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916124026CD6CF70020601C /* ActiveChatCell.swift */; };
+		0916124326CEB81E0020601C /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916124226CEB81E0020601C /* AddPhotoView.swift */; };
 		094E55B426C3E0D700B33C46 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E55B326C3E0D700B33C46 /* ButtonFormView.swift */; };
 		0973882B26CC2FAC00EDC23F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973882A26CC2FAC00EDC23F /* ListViewController.swift */; };
 		09B5622926C3F5F9006A8E08 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5622826C3F5F9006A8E08 /* StackView + Extension.swift */; };
@@ -41,6 +42,7 @@
 		0914242826C2890C0079B99E /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		0914242A26C289A30079B99E /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		0916124026CD6CF70020601C /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
+		0916124226CEB81E0020601C /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		094E55B326C3E0D700B33C46 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		0973882A26CC2FAC00EDC23F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		09B5622826C3F5F9006A8E08 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
@@ -115,9 +117,9 @@
 		094E55B126C3DF8800B33C46 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				0914242226C154F60079B99E /* UIButton + Extension.swift */,
 				0914242A26C289A30079B99E /* UIImageView + Extension.swift */,
 				0914242826C2890C0079B99E /* UILabel + Extension.swift */,
-				0914242226C154F60079B99E /* UIButton + Extension.swift */,
 				0914242426C156D50079B99E /* UIFont + Extension.swift */,
 				0914242626C1577F0079B99E /* UIColor + Extension.swift */,
 				09B5622826C3F5F9006A8E08 /* StackView + Extension.swift */,
@@ -128,8 +130,9 @@
 		094E55B226C3DF9800B33C46 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				09B5622C26C4256E006A8E08 /* OneLineTextField.swift */,
+				0916124226CEB81E0020601C /* AddPhotoView.swift */,
 				094E55B326C3E0D700B33C46 /* ButtonFormView.swift */,
+				09B5622C26C4256E006A8E08 /* OneLineTextField.swift */,
 				094E55B126C3DF8800B33C46 /* UIKit */,
 			);
 			path = Extensions;
@@ -212,6 +215,7 @@
 				0914242926C2890C0079B99E /* UILabel + Extension.swift in Sources */,
 				094E55B426C3E0D700B33C46 /* ButtonFormView.swift in Sources */,
 				0914240F26C071B50079B99E /* AppDelegate.swift in Sources */,
+				0916124326CEB81E0020601C /* AddPhotoView.swift in Sources */,
 				0973882B26CC2FAC00EDC23F /* ListViewController.swift in Sources */,
 				0914242B26C289A30079B99E /* UIImageView + Extension.swift in Sources */,
 				0914242726C1577F0079B99E /* UIColor + Extension.swift in Sources */,
