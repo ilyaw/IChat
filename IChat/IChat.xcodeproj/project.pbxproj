@@ -19,6 +19,7 @@
 		0914242B26C289A30079B99E /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0914242A26C289A30079B99E /* UIImageView + Extension.swift */; };
 		0916124126CD6CF70020601C /* ActiveChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916124026CD6CF70020601C /* ActiveChatCell.swift */; };
 		0916124326CEB81E0020601C /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916124226CEB81E0020601C /* AddPhotoView.swift */; };
+		0916124526D0289D0020601C /* SegmentedControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0916124426D0289D0020601C /* SegmentedControl + Extension.swift */; };
 		094E55B426C3E0D700B33C46 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094E55B326C3E0D700B33C46 /* ButtonFormView.swift */; };
 		0973882B26CC2FAC00EDC23F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0973882A26CC2FAC00EDC23F /* ListViewController.swift */; };
 		09B5622926C3F5F9006A8E08 /* StackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5622826C3F5F9006A8E08 /* StackView + Extension.swift */; };
@@ -43,6 +44,7 @@
 		0914242A26C289A30079B99E /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		0916124026CD6CF70020601C /* ActiveChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveChatCell.swift; sourceTree = "<group>"; };
 		0916124226CEB81E0020601C /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
+		0916124426D0289D0020601C /* SegmentedControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SegmentedControl + Extension.swift"; sourceTree = "<group>"; };
 		094E55B326C3E0D700B33C46 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
 		0973882A26CC2FAC00EDC23F /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		09B5622826C3F5F9006A8E08 /* StackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StackView + Extension.swift"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				094E55B326C3E0D700B33C46 /* ButtonFormView.swift */,
 				09B5622C26C4256E006A8E08 /* OneLineTextField.swift */,
 				094E55B126C3DF8800B33C46 /* UIKit */,
+				0916124426D0289D0020601C /* SegmentedControl + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0916124526D0289D0020601C /* SegmentedControl + Extension.swift in Sources */,
 				09B5622D26C4256E006A8E08 /* OneLineTextField.swift in Sources */,
 				09B5622B26C42360006A8E08 /* SignUpViewController.swift in Sources */,
 				0914242526C156D50079B99E /* UIFont + Extension.swift in Sources */,
