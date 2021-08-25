@@ -14,15 +14,27 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        setupSearchBar()
         setupCollectionView()
+    }
+    
+    private func setupSearchBar() {
+        navigationController?.navigationBar.barTintColor = .mainWhite()
+        navigationController?.navigationBar.shadowImage = UIImage()
+        
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchController
+        navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.hidesNavigationBarDuringPresentation = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.delegate = self
     }
     
     private func setupCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellid")
         collectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = .mainWhite()
         collectionView.delegate = self
         collectionView.dataSource = self
         
@@ -45,7 +57,13 @@ extension ListViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
-    
+}
+
+// MARK: UISearchBarDelegate
+extension ListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+    }
 }
 
 // MARK: - SwiftUI
@@ -59,10 +77,10 @@ struct ListProvider: PreviewProvider {
     
     struct ContainerView: UIViewControllerRepresentable {
         
-        let listVC = ListViewController()
+        let viewController = MainTabBarController()
         
-        func makeUIViewController(context: UIViewControllerRepresentableContext<ListProvider.ContainerView>) -> ListViewController {
-            return listVC
+        func makeUIViewController(context: UIViewControllerRepresentableContext<ListProvider.ContainerView>) -> MainTabBarController {
+            return viewController
         }
         
         func updateUIViewController(_ uiViewController: ListProvider.ContainerView.UIViewControllerType, context: UIViewControllerRepresentableContext<ListProvider.ContainerView>) {
