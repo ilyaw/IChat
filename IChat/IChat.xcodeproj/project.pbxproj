@@ -107,11 +107,11 @@
 		0916123E26CD6CCB0020601C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0916123F26CD6CD90020601C /* Cell */,
 				09202FF526D519EA00578D99 /* MainTabBarController.swift */,
 				0973882A26CC2FAC00EDC23F /* ListViewController.swift */,
 				09202FF726D51A3400578D99 /* PeopleViewController.swift */,
 				0916124626D519190020601C /* SignIn&Auth */,
-				0916123F26CD6CD90020601C /* Cell */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
