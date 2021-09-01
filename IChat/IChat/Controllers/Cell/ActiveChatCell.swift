@@ -18,7 +18,7 @@ class ActiveChatCell: UICollectionViewCell, SelfConfiguringCell {
     let friendImageView = UIImageView()
     let friendName = UILabel(text: "User name", font: .laoSangamMN20())
     let lastMessage = UILabel(text: "How are you?", font: .laoSangamMN18())
-    let gradientView = UIView()
+    let gradientView = GradientView(from: .topTrailing, to: .bottomLeading, startColor: #colorLiteral(red: 0.8309441209, green: 0.7057330012, blue: 0.9536229968, alpha: 0.8980392157), endColor: #colorLiteral(red: 0.4784313725, green: 0.6980392157, blue: 0.9215686275, alpha: 1))
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,6 +32,7 @@ class ActiveChatCell: UICollectionViewCell, SelfConfiguringCell {
     
     func configure(with chat: MChat) {
         friendImageView.image = UIImage(named: chat.userImageString)
+        friendImageView.contentMode = .scaleAspectFill
         friendName.text = chat.username
         lastMessage.text = chat.lastMessage
     }
