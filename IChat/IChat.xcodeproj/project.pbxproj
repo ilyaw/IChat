@@ -35,6 +35,7 @@
 		09B5622F26C5B97C006A8E08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5622E26C5B97C006A8E08 /* LoginViewController.swift */; };
 		09B5623126C6FD19006A8E08 /* SetupProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B5623026C6FD19006A8E08 /* SetupProfileViewController.swift */; };
 		09C5BFC326DFBEAB00338F52 /* SelfConfigurationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5BFC226DFBEAB00338F52 /* SelfConfigurationCell.swift */; };
+		09C5BFC626E100BA00338F52 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C5BFC526E100BA00338F52 /* SectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		09B5622E26C5B97C006A8E08 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		09B5623026C6FD19006A8E08 /* SetupProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupProfileViewController.swift; sourceTree = "<group>"; };
 		09C5BFC226DFBEAB00338F52 /* SelfConfigurationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfigurationCell.swift; sourceTree = "<group>"; };
+		09C5BFC526E100BA00338F52 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				0916123F26CD6CD90020601C /* Cell */,
 				09202FF526D519EA00578D99 /* MainTabBarController.swift */,
 				0973882A26CC2FAC00EDC23F /* ListViewController.swift */,
+				09C5BFC526E100BA00338F52 /* SectionHeader.swift */,
 				09202FF726D51A3400578D99 /* PeopleViewController.swift */,
 				0916124626D519190020601C /* SignIn&Auth */,
 			);
@@ -262,6 +265,7 @@
 			files = (
 				0916124526D0289D0020601C /* SegmentedControl + Extension.swift in Sources */,
 				09B5622D26C4256E006A8E08 /* OneLineTextField.swift in Sources */,
+				09C5BFC626E100BA00338F52 /* SectionHeader.swift in Sources */,
 				093C1BB326DFB62800556798 /* GradientView.swift in Sources */,
 				09B5622B26C42360006A8E08 /* SignUpViewController.swift in Sources */,
 				0914242526C156D50079B99E /* UIFont + Extension.swift in Sources */,
